@@ -1,7 +1,7 @@
 
 // This is ammo.js, a port of Bullet Physics to JavaScript. zlib licensed.
-var Ammo = function(Ammo) {
-  Ammo = Ammo || {};
+module.exports = (function() {
+  var Ammo = {};
   var Module = Ammo;
 
 var c;c||(c=eval("(function() { try { return Ammo || {} } catch(e) { return {} } })()"));var aa={},ba;for(ba in c)c.hasOwnProperty(ba)&&(aa[ba]=c[ba]);var ca=!1,da=!1,ea=!1,fa=!1;
@@ -676,4 +676,4 @@ Z.prototype.get_m_hitPointLocal=function(){return r(Od(this.a),A)};Z.prototype.s
 
 
   return Ammo;
-};
+})();
